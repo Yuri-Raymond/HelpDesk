@@ -1,0 +1,68 @@
+﻿@model List<HelpDesk.Models.ChamadoModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Chamados</h1>
+    <p>Lista de chamados do sistema HelpDesk</p>
+</div>
+
+<div class="mb-3">
+    <select id="filtroStatus" class="form-select">
+        <option value="">Todos</option>
+        <option value="Aberto">Aberto</option>
+        <option value="EmAndamento">EmAndamento</option>
+        <option value="Finalizado">Finalizado</option>
+    </select>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Solicitante</th>
+            <th>Título</th>
+            <th>Categoria</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody id="tabelaChamados">
+        @foreach (var chamado in Model)
+        {
+            <tr data-status="@chamado.Status">
+                <td>@chamado.Id</td>
+                <td>@chamado.Usuario.Nome</td>
+                <td>@chamado.Titulo</td>
+                <td>@chamado.Categoria</td>
+                <td>@chamado.Status</td>
+                <td>
+                    <a asp-action="Detalhes"
+                       asp-route-id="@chamado.Id"
+                       class="btn btn-info btn-sm">
+                        Ver
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    $("#filtroStatus").change(function () {
+        var statusSelecionado = $(this).val();
+
+        $("#tabelaChamados tr").each(function () {
+            var status = $(this).data("status");
+
+            if (statusSelecionado === "" || status === statusSelecionado) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+</script>
