@@ -1,7 +1,0 @@
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\HelpDesk.exe
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\appsettings.json
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\HelpDesk.dll
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\HelpDesk.deps.json
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\HelpDesk.runtimeconfig.json
-C:\Users\YuriC\Documents\Sistema de Gestão de Chamados\HelpDesk\obj\Debug\net8.0\PubTmp\Out\HelpDesk.pdb
